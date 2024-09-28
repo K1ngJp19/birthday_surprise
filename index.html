@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+
+    <body>
+        <div class="birthday-card">
+            <!-- Inner -->
+            <div class="cover-inner">
+                <img src="imgs/9b9f2d88-8351-46b6-accb-d3c5be0fcdda.jpg" width="100%">
+            </div>
+        
+            <!-- Outer -->
+            <div class="cover-outer">
+                <img src="https://images.esellerpro.com/3274/I/318/37/lrgscaleAO002.jpg" width="100%">
+            </div>
+        
+            <!-- Text -->
+            <div class="text">
+                <p class="title">
+                    Happy Birthday! <br> Anica
+                </p>
+                <p>
+                    I hope your special day will bring you lots of happiness,
+                    love, and fun.
+                    You deserve them a lot. Enjoy! Baby ko Matanda kana!
+                </p>
+                <p>Hope your day goes great!</p>
+                
+                <p>- JP and Soya</p>
+            </div>
+
+            <audio id="backgroundMusic" loop>
+                <source src="audio/HAPPY BIRTHDAY FROM THE CATS.mp3" type="audio/mpeg">
+            </audio>
+
+        </div>
+
+        <script>
+            document.body.addEventListener('click', function() {
+            var audio = document.getElementById('backgroundMusic');
+            if (audio.paused) {
+                audio.play();
+            }
+        });
+    </script>
+    
+    </body>
+</html>
